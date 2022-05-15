@@ -41,9 +41,9 @@ curl -X GET 'http://localhost:4000/api/arts'
 # retrieves art
 query {
   art(id: "15794c31-2b9d-4aeb-aaf2-16eba64b4472") {
-    artist_name,
-    description,
-    price,
+    artist_name
+    description
+    price
     hash
   }
 }
