@@ -1,6 +1,7 @@
 defmodule NftexWeb.Schema.Types.Root do
   use Absinthe.Schema.Notation
 
+  alias NftexWeb.Middlewares.Log
   alias NftexWeb.Resolvers.Art, as: ArtResolver
   alias NftexWeb.Schema.Types
 
@@ -13,6 +14,7 @@ defmodule NftexWeb.Schema.Types.Root do
       arg :id, non_null(:uuid4)
 
       resolve &ArtResolver.get/2
+      middleware Log
     end
   end
 
@@ -22,6 +24,7 @@ defmodule NftexWeb.Schema.Types.Root do
       arg :input, non_null(:create_art_input)
 
       resolve &ArtResolver.create/2
+      middleware Log
     end
   end
 end
