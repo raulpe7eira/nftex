@@ -8,8 +8,8 @@ defmodule NftexWeb.Router do
   scope "/api" do
     pipe_through :api
 
-    forward "/graphql", Absinthe.Plug, schenma: NftexWeb.Schema
-    forward "/graphiql", Absinthe.Plug.GraphiQL, schenma: NftexWeb.Schema
+    forward "/graphql", Absinthe.Plug, schema: NftexWeb.Schema
+    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: NftexWeb.Schema
   end
 
   scope "/api", NftexWeb do
