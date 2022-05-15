@@ -60,7 +60,7 @@ mutation {
   }
 }
 
-# retrieves arts
+# retrieves list of art
 query {
   arts {
     id
