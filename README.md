@@ -1,6 +1,6 @@
 # Nftex API
 
-This repository is the code corresponding to the [Rocketseat - Ignite, Module: Nftex Project](https://app.rocketseat.com.br/node/projeto-nftex-2022) lab.
+This repository is the code corresponding to the [Rocketseat - Ignite, Module: Nftex Project](https://app.rocketseat.com.br/node/projeto-nftex-2022) lab by Rafael Camarda.
 
 > The project simulates a NFT Art Catalog API that allows to register arts with GraphQL.
 
